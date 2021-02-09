@@ -6,11 +6,13 @@ switch (letter.toLowerCase()){
 case ('yes'):
 case ('y') :
   alert ('We have the same first letter!');
+  console.log(alert);
   score+=1;
   break;
 case ('no'):
 case ('n'):
   alert ('It\'s ok, your first letter is pretty to<3');
+  console.log(alert);
   break;
 }
 let myAge = prompt('Are you 23 years old?');
@@ -18,11 +20,13 @@ switch ( myAge.toLowerCase()){
 case ('yes'):
 case ( 'y'):
   alert ('we\'re the same age!');
+  console.log(alert);
   score+=1;
   break;
 case ('no'):
 case ('n'):
   alert ('We\'re not the same age :\'(');
+  console.log(alert);
   break;
 }
 let intrest = prompt('Are you intrested in programming?');
@@ -30,11 +34,13 @@ switch (intrest.toLowerCase()){
 case ('yes'):
 case ('y'):
   alert ('Great,me to!');
+  console.log(alert);
   score+=1;
   break;
 case ('no'):
 case ('n'):
   alert ('sorry to hear that');
+  console.log(alert);
   break;
 }
 let anime = prompt ('Do you like anime?');
@@ -42,11 +48,13 @@ switch (anime.toLowerCase()){
 case ('yes'):
 case ('y'):
   alert ('OMG! me too,greeting anime lover fellow<3');
+  console.log(alert);
   score+=1;
   break;
 case ('no'):
 case ('n'):
   alert ('It\'s ok, I\'m sure you have other intrests.');
+  console.log(alert);
   break;
 }
 let reading = prompt ('Do you like reading?');
@@ -54,11 +62,13 @@ switch (reading.toLowerCase()){
 case ('yes'):
 case ('y'):
   alert ('It\'s grat to meet another reader! we\'re rare those days');
+  console.log(alert);
   score+=1;
   break;
 case ('no'):
 case ('n'):
   alert ('You should try to read more, it\'s a lot of fun and benifit');
+  console.log(alert);
   break;
 }
 alert ( userName + ' welcome here I wish you will enjoy this place');
