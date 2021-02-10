@@ -9,7 +9,7 @@ function myName(userName) {
 myName(userName);
 
 
-let letter = prompt('Does your name starts with the letter\'R\'?');
+let letter = prompt('Does your name starts with the letter \'R\'?');
 
 function myLetter(letter) {
 
@@ -49,10 +49,10 @@ function tAge(myAge) {
 }
 tAge(myAge);
 
-let intrest = prompt('Are you intrested in programming?');
+let interest = prompt('Are you interested in programming?');
 
-function yInterst(intrest) {
-  switch (intrest.toLowerCase()) {
+function yInterst(interest) {
+  switch (interest.toLowerCase()) {
   case ('yes'):
   case ('y'):
     alert('Great,me to!');
@@ -66,7 +66,7 @@ function yInterst(intrest) {
     break;
   }
 }
-yInterst(intrest);
+yInterst(interest);
 
 let anime = prompt('Do you like anime?');
 
@@ -80,7 +80,7 @@ function iAnime(anime) {
     break;
   case ('no'):
   case ('n'):
-    alert('It\'s ok, I\'m sure you have other intrests.');
+    alert('It\'s ok, I\'m sure you have other interest.');
     console.log(alert);
     break;
   }
@@ -93,13 +93,13 @@ function dReading(reading) {
   switch (reading.toLowerCase()) {
   case ('yes'):
   case ('y'):
-    alert('It\'s grat to meet another reader! we\'re rare those days');
+    alert('It\'s great to meet another reader! we\'re rare those days');
     console.log(alert);
     score += 1;
     break;
   case ('no'):
   case ('n'):
-    alert('You should try to read more, it\'s a lot of fun and benifit');
+    alert('You should try to read more, it\'s a lot of fun and benefits');
     console.log(alert);
     break;
   }
@@ -110,13 +110,13 @@ alert(userName + ' welcome here I wish you will enjoy this place');
 let favouritNumber ='2';
 console.log(favouritNumber);
 let tries = 4;
-alert('my favourit number is located between 1 & 6');
-let userNumber = prompt('try to guess my favourit number, you\'ll have 4 attempts to git the right answer');
+alert('my favorite number is located between 1 & 6');
+let userNumber = prompt('try to guess my favorite number, you\'ll have 4 attempts to git the right answer');
 let right = false;
 while (tries && !right) {
-  for (let n = 0; n < favouritNumber.length; n++) {
+  for (let n = 0; n < 4; n++) {
     if (userNumber === favouritNumber) {
-      alert('Great!. You\'re right, my favourit number is 2');
+      alert('Great!. You\'re right, my favorite number is 2');
       console.log(userNumber);
       score += 1;
       right = true;
@@ -128,18 +128,18 @@ while (tries && !right) {
   if (right) {
     break;
   } else {
-    alert('so bad:\'(, my favourit number is 2');
+    alert('so bad:\'(, my favorite number is 2');
   }
 }
 
-let topTen = ['Bleach', 'FMAB', 'BNHA', 'Didimon Adventure', 'Dragon Quest', 'NARUTO', 'Fate series', 'Demon Slayer', 'JJK'];
+let topTen = ['Bleach', 'FMAB', 'BNHA', 'Digimon Adventure', 'Dragon Quest', 'NARUTO', 'Fate series', 'Demon Slayer', 'JJK'];
 let attempts = 6;
 let favourit = false;
 alert('try to guess my favourit 1 top anime, be aware that you have just 6 attempts!');
-let userAnswer = prompt('my faviourt anime name is the main character\'s name');
-let character = ['Akame ga kill', 'Koroku no baskit', 'Dororo', 'Durarara!!'];
+let userAnswer = prompt('my favorite anime name is the main character\'s name');
+let character = ['Akame ga kill!', 'Koroku no basket', 'Dororo', 'Durarara!!'];
 while (attempts && !favourit) {
-  for (let f = 0; f < topTen.length; f++) {
+  for (let f = 0; f < 6; f++) {
     if (userAnswer.toUpperCase() === topTen[5]) {
       alert('fantastic!. You guessed that right, my favourit Anime is Naruto');
       console.log(userAnswer);
@@ -153,7 +153,8 @@ while (attempts && !favourit) {
   if (favourit) {
     break;
   } else {
-    alert('you could\'nt figure it out and that made me sad:\'(, my favourit number is Naruto, but here another animes I like have the name of it\'s main character: ' + character);
+    alert('you could\'nt figure it out and that made me sad:\'(, my favourit Anime is Naruto, but here another Animes I like have the name of it\'s main character: ' + character);
+    break;
   }
 }
 alert('we have ' + score + ' similarities!');
