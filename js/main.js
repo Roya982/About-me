@@ -1,14 +1,7 @@
 'use strict';
-let score = 0;
+let similarities = 0;
+let score =0;
 let userName = prompt('what\'s you\'re name?');
-
-function myName(userName) {
-  alert('welcome her');
-  console.log(userName);
-}
-myName(userName);
-
-
 let letter = prompt('Does your name starts with the letter \'R\'?');
 
 function myLetter(letter) {
@@ -17,13 +10,11 @@ function myLetter(letter) {
   case ('yes'):
   case ('y'):
     alert('We have the same first letter!');
-    console.log(alert);
-    score += 1;
+    similarities += 1;
     break;
   case ('no'):
   case ('n'):
     alert('It\'s ok, your first letter is pretty to<3');
-    console.log(alert);
     break;
   }
 }
@@ -37,13 +28,11 @@ function tAge(myAge) {
   case ('yes'):
   case ('y'):
     alert('we\'re the same age!');
-    console.log(alert);
-    score += 1;
+    similarities += 1;
     break;
   case ('no'):
   case ('n'):
     alert('We\'re not the same age :\'(');
-    console.log(alert);
     break;
   }
 }
@@ -56,13 +45,11 @@ function yInterst(interest) {
   case ('yes'):
   case ('y'):
     alert('Great,me to!');
-    console.log(alert);
-    score += 1;
+    similarities += 1;
     break;
   case ('no'):
   case ('n'):
     alert('sorry to hear that');
-    console.log(alert);
     break;
   }
 }
@@ -75,13 +62,11 @@ function iAnime(anime) {
   case ('yes'):
   case ('y'):
     alert('OMG! me too,greeting anime lover fellow<3');
-    console.log(alert);
-    score += 1;
+    similarities += 1;
     break;
   case ('no'):
   case ('n'):
     alert('It\'s ok, I\'m sure you have other interest.');
-    console.log(alert);
     break;
   }
 }
@@ -94,13 +79,11 @@ function dReading(reading) {
   case ('yes'):
   case ('y'):
     alert('It\'s great to meet another reader! we\'re rare those days');
-    console.log(alert);
-    score += 1;
+    similarities += 1;
     break;
   case ('no'):
   case ('n'):
     alert('You should try to read more, it\'s a lot of fun and benefits');
-    console.log(alert);
     break;
   }
 }
@@ -108,7 +91,6 @@ dReading(reading);
 alert(userName + ' welcome here I wish you will enjoy this place');
 
 let favouritNumber ='2';
-console.log(favouritNumber);
 let tries = 4;
 alert('my favorite number is located between 1 & 6');
 let userNumber = prompt('try to guess my favorite number, you\'ll have 4 attempts to git the right answer');
@@ -117,7 +99,6 @@ while (tries && !right) {
   for (let n = 0; n < 4; n++) {
     if (userNumber === favouritNumber) {
       alert('Great!. You\'re right, my favorite number is 2');
-      console.log(userNumber);
       score += 1;
       right = true;
       break;
@@ -142,7 +123,6 @@ while (attempts && !favourit) {
   for (let f = 0; f < 6; f++) {
     if (userAnswer.toUpperCase() === topTen[5]) {
       alert('fantastic!. You guessed that right, my favourit Anime is Naruto');
-      console.log(userAnswer);
       score += 1;
       favourit = true;
       break;
@@ -157,4 +137,4 @@ while (attempts && !favourit) {
     break;
   }
 }
-alert('we have ' + score + ' similarities!');
+alert('we have ' + similarities + ' similarities and you\'ve guessed '+score+' of my favorites!');
